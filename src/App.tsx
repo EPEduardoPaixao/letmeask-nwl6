@@ -1,10 +1,13 @@
 import React from 'react';
+import { Home } from './pages/Home';
+import { NewRomm } from './pages/NewRoom';
 
 function App() {
   return (
-    <div className="App">
-     <h1>together</h1>
-    </div>
+    <>
+    {/* <Home/> */}
+    <NewRomm/>
+    </>
   );
 }
 
