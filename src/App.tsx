@@ -1,12 +1,13 @@
-import React from 'react';
-import { Home } from './pages/Home';
-import { NewRomm } from './pages/NewRoom';
+import Routes from "./routes";
+
+import { AuthContextProvider } from "./contexts/AuthContext";
 
 function App() {
   return (
     <>
-    {/* <Home/> */}
-    <NewRomm/>
+      <AuthContextProvider>
+        <Routes />
+      </AuthContextProvider>
     </>
   );
 }
