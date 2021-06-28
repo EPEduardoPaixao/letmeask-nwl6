@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# 🚀 React LetMeAsk
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# 🌐 Teste a aplicação online!
 
-In the project directory, you can run:
+Link da aplicação: https://letmeask-together-d9afa.web.app/
 
-### `yarn start`
+# 💡 O que foi desenvolvido?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Nesse projeto foi desenvolvido (através da Next Level Week #6 da RocketSeat) uma aplicação voltada para a interação através de perguntas, com duas visões diferentes, o administrador, com permissões de criar uma sala, marcar uma pergunta como já respondida e de dar destaque em uma pergunta, a visão de usuário pode enviar perguntas e dar likes nas perguntas enviadas por ele e por outros usuários.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# 💻 Tecnologias
 
-### `yarn test`
+  #### Web: React
+  #### Database: Firebase
+  #### Hosting: Firebase Hosting
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 📂 Outras tecnologias/técnicas
 
-### `yarn build`
+    #### React CRA;
+    #### TypeScript;
+    #### React Router;
+    #### SASS
+    #### Classnames;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 👨‍💻 Minha experiência
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Apesar de já desenvolver com React não há um evento que eu não aprenda coisas novas. Desta vez aprendi sobre Firebase, Custom Hooks e Contexts API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 🖼️ Alguns Screenshots da Aplicação
 
-### `yarn eject`
+![image](https://user-images.githubusercontent.com/42215395/123561677-3e8ac680-d780-11eb-84c0-65bb6a502a2e.png)
+![image](https://user-images.githubusercontent.com/42215395/123561681-49455b80-d780-11eb-9b67-1803ef37fd81.png)
+![image](https://user-images.githubusercontent.com/42215395/123561726-8578bc00-d780-11eb-86a4-07da0b453367.png)
+![image](https://user-images.githubusercontent.com/42215395/123561749-a4774e00-d780-11eb-9611-d6f46282483f.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
