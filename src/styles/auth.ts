@@ -1,3 +1,7 @@
+import styled from  'styled-components';
+
+export const Container = styled.div`
+
 #page-auth {
   display: flex;
   align-items: stretch;
@@ -6,7 +10,7 @@
   aside {
     flex: 7;
 
-    background: #835afd;
+    background: ${props=>props.theme.colors.primary};
     color: #fff;
 
     display: flex;
@@ -133,3 +137,6 @@
     }
   }
 }
+
+
+`

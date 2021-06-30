@@ -1,6 +1,8 @@
 import firebase from "firebase";
 import { createContext, ReactNode, useEffect, useState } from "react";
 import { auth } from "../services/firebase";
+import ligth from "../styles/themes/ligth";
+import dark from "../styles/themes/ligth";
 
 type IUser = {
   id: string;
@@ -10,6 +12,7 @@ type IUser = {
 type AuthContextType = {
   user: IUser | undefined;
   signInWithGoogle: () => Promise<void>;
+  toggleTheme:() => void;
 };
 type AuthContextProviderProps = {
   children: ReactNode;
@@ -19,6 +22,11 @@ export const AuthContext = createContext({} as AuthContextType);
 
 export function AuthContextProvider(props: AuthContextProviderProps) {
   const [user, setUser] = useState<IUser>();
+  const [theme, setTheme] = useState(ligth)
+  
+  const toggleTheme = () =>{
+    setTheme(theme.title === 'ligth'? dark: ligth)
+  }
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -59,7 +67,7 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
     }
   }
   return (
-    <AuthContext.Provider value={{ user, signInWithGoogle }}>
+    <AuthContext.Provider value={{ user, signInWithGoogle, toggleTheme }}>
       {props.children}
     </AuthContext.Provider>
   );
