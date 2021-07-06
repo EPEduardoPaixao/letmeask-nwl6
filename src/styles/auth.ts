@@ -7,10 +7,15 @@ export const Container = styled.div`
   align-items: stretch;
   height: 100vh;
 
+  &.dark{
+    background: #333;
+  }
+
   aside {
     flex: 7;
 
-    background: ${props=>props.theme.colors.primary};
+    /* background: ${props=>props.theme.colors?.primary}; */
+    background: #835afd;
     color: #fff;
 
     display: flex;
